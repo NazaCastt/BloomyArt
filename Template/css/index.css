@@ -164,7 +164,7 @@ iframe {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #b38e6a
+    background-color: #731C2C
 }
 
 html.fixed {
@@ -241,7 +241,7 @@ a.h1,a.h2,a.h3,a.h4,a.h5,a.h6 {
 }
 
 a.h1:focus,a.h1:hover,a.h2:focus,a.h2:hover,a.h3:focus,a.h3:hover,a.h4:focus,a.h4:hover,a.h5:focus,a.h5:hover,a.h6:focus,a.h6:hover {
-    color: #b38e6a
+    color: #731C2C
 }
 
 .h1,h1 {
@@ -327,7 +327,7 @@ input[type=checkbox]:checked+label .icon {
 
 .field {
     height: 60px;
-    border: 1px solid #c3b2a5;
+    border: 1px solid #c3baa5;
     padding: 0 20px;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
@@ -411,7 +411,7 @@ input[type=checkbox]:checked+label .icon {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
-    background: #b38e6a;
+    background: #911F2F;
     color: #fff;
     height: 60px;
     padding: 0 30px;
@@ -434,7 +434,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .btn:focus,.btn:hover {
-    background: #534931
+    background: #731C2C
 }
 
 .btn--play {
@@ -446,76 +446,13 @@ input[type=checkbox]:checked+label .icon {
 
 .btn--bordered {
     background: 0 0;
-    border: 2px solid #b38e6a;
-    color: #b38e6a
+    border: 2px solid #911F2F;
+    color: #911F2F
 }
 
 .btn--bordered:focus,.btn--bordered:hover {
     color: #fff;
-    border-color: #534931
-}
-
-.videoPopup {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 400000;
-    visibility: hidden;
-    -webkit-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-    background: rgba(0,0,0,.6)
-}
-
-.videoPopup.visible {
-    visibility: visible
-}
-
-.videoPopup .video_frame {
-    background: #fff;
-    padding: 20px;
-    min-height: 300px;
-    position: relative;
-    border: 2px solid #b38e6a
-}
-
-.videoPopup .video_frame iframe {
-    width: 100%;
-    height: auto;
-    -ms-flex-item-align: stretch;
-    align-self: stretch
-}
-
-.videoPopup .video_frame-close {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: 2px solid #b38e6a;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    -webkit-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-    cursor: pointer;
-    right: 0;
-    top: -40px;
-    background: #fff;
-    color: #b38e6a
-}
-
-.videoPopup .video_frame-close:hover {
-    color: #534931
+    border-color: #731C2C
 }
 
 .header_trigger {
