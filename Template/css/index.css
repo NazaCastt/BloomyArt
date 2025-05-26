@@ -13,7 +13,7 @@
     box-sizing: border-box;
     outline: 0;
     scrollbar-width: auto;
-    scrollbar-color: #FEC3BA #FAF2ED
+    scrollbar-color: #911F2F #FAF2ED
 }
 
 html {
@@ -1088,7 +1088,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     width: 100%;
     overflow-y: auto;
     max-height: calc(100vh - 100px);
-    color: #534931;
+    color: #A6323B;
     margin-top: 30px
 }
 
@@ -1097,7 +1097,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .header_nav .nav-item.current,.header_nav .nav-item:focus,.header_nav .nav-item:hover,.header_nav .nav-link.current,.header_nav .nav-link:focus,.header_nav .nav-link:hover {
-    color: #F6E5DB
+    color: #731C2C
 }
 
 .header_nav .nav-link {
