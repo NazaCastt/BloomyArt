@@ -13,7 +13,7 @@
     box-sizing: border-box;
     outline: 0;
     scrollbar-width: auto;
-    scrollbar-color: #b38e6a #FAF2ED
+    scrollbar-color: #FEC3BA #FAF2ED
 }
 
 html {
@@ -220,7 +220,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #534931
+    color: #731C2C
 }
 
 .section_header-text {
@@ -229,7 +229,7 @@ body {
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     font-family: Raleway,sans-serif;
-    color: #534931;
+    color: #731C2C;
     line-height: 1.3;
     font-weight: 600
 }
@@ -1106,7 +1106,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 
 .header.sticky {
     position: fixed;
-    background: #e5dcd2
+    background: #FEC3BA
 }
 
 .header.opened {
@@ -1252,7 +1252,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #f7f7f7;
+    background: #F6E5DB;
     font-size: 22px
 }
 
@@ -1267,7 +1267,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .header_nav-socials .link:focus .icon,.header_nav-socials .link:hover .icon {
-    color: #f7f7f7
+    color: #F6E5DB
 }
 
 @media screen and (min-width:767.98px) {
@@ -2415,7 +2415,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #f7f7f7;
+    background: #F6E5DB;
     font-size: 22px
 }
 
@@ -2430,7 +2430,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .footer_block-socials .link:focus .icon,.footer_block-socials .link:hover .icon {
-    color: #f7f7f7
+    color: #F6E5DB
 }
 
 @media screen and (min-width:767.98px) {
