@@ -297,7 +297,7 @@ input[type=checkbox]:checked+label:before,input[type=checkbox]:not(:checked)+lab
     top: 3px;
     width: 16px;
     height: 16px;
-    border: 1px solid #c3b2a5
+    border: 1px solid #FAF2ED
 }
 
 input[type=checkbox]:checked+label .icon,input[type=checkbox]:not(:checked)+label .icon {
@@ -327,7 +327,7 @@ input[type=checkbox]:checked+label .icon {
 
 .field {
     height: 60px;
-    border: 1px solid #c3baa5;
+    border: 1px solid #FAF2ED;
     padding: 0 20px;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
@@ -412,7 +412,7 @@ input[type=checkbox]:checked+label .icon {
     font-weight: 600;
     font-size: 14px;
     background: #911F2F;
-    color: #fff;
+    color: #FAF2ED;
     height: 60px;
     padding: 0 30px;
     display: -webkit-box;
@@ -451,7 +451,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .btn--bordered:focus,.btn--bordered:hover {
-    color: #fff;
+    color: #FAF2ED;
     border-color: #731C2C
 }
 
@@ -477,7 +477,7 @@ input[type=checkbox]:checked+label .icon {
     position: relative;
     height: 3px!important;
     width: 100%;
-    background: #534931;
+    background: #FAF2ED;
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out
@@ -512,7 +512,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .icon {
-    color: #b38e6a
+    color: #911F2F
 }
 
 .meta {
@@ -538,7 +538,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .meta_item--pin {
-    color: #b38e6a
+    color: #911F2F
 }
 
 .logo {
@@ -567,8 +567,8 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .blog_tags-tag {
-    background: #b38e6a;
-    color: #fff;
+    background: #911F2F;
+    color: #FAF2ED;
     padding: 6px 10px
 }
 
@@ -640,14 +640,14 @@ input[type=checkbox]:checked+label .icon {
     -ms-flex-pack: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid #b38e6a;
+    border: 2px solid #911F2F;
     width: 50px;
     height: 50px;
     font-size: 12px
 }
 
 .swiper-nav--round .swiper-nav-item:hover {
-    color: #b38e6a
+    color: #911F2F
 }
 
 .swiper-overlay-nav {
@@ -658,7 +658,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .swiper-overlay-nav .nav-item {
-    background: #fff;
+    background: #F6E5DB;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -671,12 +671,12 @@ input[type=checkbox]:checked+label .icon {
     width: 50px;
     height: 50px;
     font-size: 17px;
-    color: #b38e6a
+    color: #911F2F
 }
 
 .swiper-overlay-nav .nav-item:hover {
-    color: #fff;
-    background: #b38e6a
+    color: #F6E5DB;
+    background: #911F2F
 }
 
 .swiper-pagination {
@@ -694,7 +694,7 @@ input[type=checkbox]:checked+label .icon {
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: #F6E5DB;
     border-radius: 50%;
     -webkit-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
@@ -703,7 +703,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .swiper-pagination-bullet-active,.swiper-pagination-bullet:hover {
-    background: #b38e6a
+    background: #F6E5DB
 }
 
 .container {
@@ -767,7 +767,7 @@ input[type=checkbox]:checked+label .icon {
     width: 100vw;
     height: 100vh;
     visibility: hidden;
-    background-color: #534931;
+    background-color: #731C2C;
     background-clip: padding-box;
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
@@ -897,16 +897,16 @@ input[type=checkbox]:checked+label .icon {
 }
 
 #grudus-clock .g-head {
-    background: #b38e6a!important
+    background: #F6E5DB!important
 }
 
 #grudus-clock .g-time-wrapper {
-    border: 1px solid #b38e6a;
+    border: 1px solid #F6E5DB;
     z-index: 100000
 }
 
 #grudus-clock .g-buttons,#grudus-clock .g-clock-wrapper {
-    background: #fff!important
+    background: #FAF2ED!important
 }
 
 #grudus-clock .g-clock {
@@ -921,7 +921,7 @@ input[type=checkbox]:checked+label .icon {
 
 #grudus-clock .g-button:focus,#grudus-clock .g-button:hover {
     background: 0 0;
-    color: #b38e6a!important
+    color: #F6E5DB!important
 }
 
 .timepicker-ui-wrapper {
@@ -932,19 +932,19 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .timepicker-ui-hour,.timepicker-ui-minutes {
-    background-color: #e5dcd2!important;
+    background-color: #FAF2ED!important;
     border: transparent!important;
     outline: 0!important;
     color: #534931!important
 }
 
 .timepicker-ui-am,.timepicker-ui-pm {
-    border-color: #e5dcd2!important;
-    color: #e5dcd2!important
+    border-color: #FAF2ED!important;
+    color: #FAF2ED!important
 }
 
 .timepicker-ui-am.active,.timepicker-ui-am:hover,.timepicker-ui-pm.active,.timepicker-ui-pm:hover {
-    background-color: #e5dcd2!important;
+    background-color: #FAF2ED!important;
     color: #534931!important
 }
 
@@ -953,11 +953,11 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .timepicker-ui-cancel-btn,.timepicker-ui-ok-btn {
-    color: #e5dcd2!important
+    color: #FAF2ED!important
 }
 
 .timepicker-ui-cancel-btn:hover,.timepicker-ui-ok-btn:hover {
-    color: #b38e6a!important;
+    color: #F6E5DB!important;
     background: 0 0!important
 }
 
@@ -971,14 +971,14 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .alert_popup-content {
-    background: #fff;
+    background: #F6E5DB;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     max-width: 280px;
     padding: 20px 30px;
     font-size: 18px;
-    border: 1px solid #e5dcd2
+    border: 1px solid #FAF2ED
 }
 
 .alert_popup-close {
@@ -992,7 +992,7 @@ input[type=checkbox]:checked+label .icon {
 }
 
 .alert_popup-close:hover {
-    color: #b38e6a
+    color: #F6E5DB
 }
 
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration {
@@ -1097,7 +1097,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .header_nav .nav-item.current,.header_nav .nav-item:focus,.header_nav .nav-item:hover,.header_nav .nav-link.current,.header_nav .nav-link:focus,.header_nav .nav-link:hover {
-    color: #b38e6a
+    color: #F6E5DB
 }
 
 .header_nav .nav-link {
@@ -1126,7 +1126,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 .header_nav .nav-link .icon:after,.header_nav .nav-link .icon:before {
     content: '';
     position: absolute;
-    background: #b38e6a
+    background: #F6E5DB
 }
 
 .header_nav .nav-link .icon:before {
@@ -1200,11 +1200,11 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .header_nav-socials .link:focus,.header_nav-socials .link:hover {
-    background: #b38e6a
+    background: #911F2F
 }
 
 .header_nav-socials .link:focus .icon,.header_nav-socials .link:hover .icon {
-    color: #F6E5DB
+    color: #FAF2ED
 }
 
 @media screen and (min-width:767.98px) {
@@ -1294,58 +1294,6 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
         align-items: center
     }
 
-    .header_nav-list_item .dropdown-toggle {
-        position: relative;
-        z-index: 2;
-        font-size: 16px
-    }
-
-    .header_nav-list_item .dropdown-menu {
-        margin: 0;
-        position: absolute;
-        z-index: 1;
-        opacity: 0;
-        top: 0;
-        padding-top: 50px;
-        visibility: hidden;
-        -webkit-transition: opacity .3s;
-        -o-transition: opacity .3s;
-        transition: opacity .3s
-    }
-
-    .header_nav-list_item .dropdown-menu.active {
-        opacity: 1;
-        visibility: visible
-    }
-
-    .header_nav-list_item .dropdown-menu .list-item[data-main=true] {
-        display: none!important
-    }
-
-    .header_nav-list_item .dropdown-list {
-        background: #e5dcd2;
-        margin: 0 0 0 -15px;
-        padding: 10px 15px;
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 15px
-    }
-
-    .header_nav-list_item .dropdown-list .nav-item {
-        height: 100%
-    }
-
-    .header_nav-list_item .dropdown-list .nav-item.current,.header_nav-list_item .dropdown-list .nav-item:focus,.header_nav-list_item .dropdown-list .nav-item:hover {
-        color: #b38e6a
-    }
 }
 
 @media screen and (min-width:1399.98px) {
@@ -1395,10 +1343,6 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     transform: translateY(-50%)
 }
 
-.banner {
-    display: none;
-    background: url(../img/placeholder.jpg) center/cover no-repeat fixed
-}
 
 @media screen and (min-width:767.98px) {
     .hero {
@@ -1417,7 +1361,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
         left: 0;
         bottom: 0;
         right: 0;
-        color: #ebebeb;
+        color: #FAF2ED;
         overflow: hidden
     }
 
@@ -1624,7 +1568,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
         display: block;
         position: absolute;
         z-index: -1;
-        color: #ebebeb;
+        color: #FAF2ED;
         left: 0;
         right: 0;
         top: 0;
@@ -1678,7 +1622,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     left: 0;
     height: 2px;
     width: 0;
-    background: #b38e6a;
+    background: #F6E5DB;
     -webkit-transition: width .5s ease-in-out;
     -o-transition: width .5s ease-in-out;
     transition: width .5s ease-in-out
@@ -1754,8 +1698,8 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     width: -moz-fit-content;
     width: fit-content;
     aspect-ratio: 1/1;
-    background: #b38e6a;
-    color: #fff;
+    background: #911F2F;
+    color: #FAF2ED;
     font-family: Raleway,sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1829,7 +1773,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .presentation {
-    background: #f7f7f7
+    background: #FAF2ED
 }
 
 .presentation[data-type=gallery] .presentation_slider-slide .link,.presentation[data-type=gallery] .presentation_slider-slide .link .media,.presentation[data-type=gallery] .presentation_slider-slide .link .media img {
@@ -2009,39 +1953,6 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     .presentation_slider {
         width: 75%
     }
-}
-
-.testimonials .media {
-    display: none
-}
-
-.testimonials .main {
-    background: #e5dcd2;
-    position: relative;
-    padding: 40px 30px
-}
-
-.testimonials_bg {
-    position: absolute;
-    display: none
-}
-
-.testimonials_header {
-    margin-bottom: 20px
-}
-
-.testimonials_header .icon {
-    display: none;
-    color: #c3b2a5
-}
-
-.testimonials_slider-slide .text {
-    margin-bottom: 15px;
-    max-width: 495px
-}
-
-.testimonials_slider-nav {
-    margin-top: 30px
 }
 
 @media screen and (min-width:567.98px) {
@@ -2363,11 +2274,11 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
 }
 
 .footer_block-socials .link:focus,.footer_block-socials .link:hover {
-    background: #b38e6a
+    background: #911F2F
 }
 
 .footer_block-socials .link:focus .icon,.footer_block-socials .link:hover .icon {
-    color: #F6E5DB
+    color: #FAF2ED
 }
 
 @media screen and (min-width:767.98px) {
