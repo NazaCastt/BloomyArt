@@ -1,3 +1,31 @@
+:root {
+    /* Paleta de colores */
+    --color-primary: #FF9E8F;        /* Coral principal */
+    --color-primary-dark: #F47C72;   /* Coral oscuro */
+    --color-secondary: #5A534A;      /* Texto principal */
+    --color-accent: #7BC4B8;         /* Turquesa */
+    --color-light: #FFF9F5;          /* Fondo claro */
+    --color-paper: #FFFFFF;          /* Fondo blanco */
+    --color-border: #E0E7E6;         /* Bordes */
+    --color-text-muted: #8A837B;     /* Texto secundario */
+    --color-text-dark: #4A4540;      /* Texto oscuro */
+    --color-coral: #F47C72;
+    --color-shadow: rgba(0, 0, 0, 0.05);
+    
+    /* Colores de estado */
+    --color-success: #6BA583;        /* Verde */
+    --color-warning: #FFB347;        /* Amarillo/naranja */
+    --color-danger: #FF6B6B;         /* Rojo */
+    --color-info: #7D9EB2;           /* Azul */
+    
+    /* Colores adicionales */
+    --color-peach: #F9C4B9;          /* Melocotón */
+    --color-mint: #79BCAF;           /* verde aguamarina */
+    --color-turquoise: #7BC4B8;      /* Turquesa */
+    --color-text-alternative: #FAF2ED; /* Texto alternativo */
+    --color-button-alternative: #911F2F; /* Botón alternativo */
+}
+
 /* Reset y Estilos Generales */
 * {
     margin: 0;
@@ -8,8 +36,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #5E1824;
-    background-color: #FAF2ED;
+    color: var(--color-secondary);
+    background-color: var(--color-light);
     overflow-x: hidden;
 }
 
@@ -28,8 +56,8 @@ body {
 
 /* Header */
 .header {
-    background-color: #F5DACB;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-paper);
+    box-shadow: 0 4px 15px var(--color-shadow);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,19 +65,27 @@ body {
 }
 
 .header:hover {
-    background-color: #FEC3BA;
+    background-color: var(--color-peach);
 }
 
 .logo {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 2rem;
-    color: #A6323B;
+    color: var(--color-primary-dark);
     transition: color 0.3s ease;
 }
 
 .logo:hover {
-    color: #5E1824;
+    color: var(--color-primary);
+}
+
+.nav-link {
+    color: var(--color-secondary);
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
 }
 
 .social-links .nav-link {
@@ -63,9 +99,13 @@ body {
     transform: scale(1.2);
 }
 
+.social-links .fa-whatsapp { color: var(--color-success); }
+.social-links .fa-facebook-f { color: var(--color-info); }
+.social-links .fa-instagram { color: var(--color-danger); }
+
 /* Sección Bienvenida */
 .hero-section {
-    background-color: #FEC3BA;
+    background-color: var(--color-peach);
     padding: 120px 0;
     position: relative;
     overflow: hidden;
@@ -91,26 +131,26 @@ body {
 .subtitle {
     display: block;
     font-size: 1.1rem;
-    color: #A6323B;
+    color: var(--color-primary-dark);
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 15px;
     font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px var(--color-shadow);
 }
 
 .title {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    color: #5E1824;
+    color: var(--color-secondary);
     margin-bottom: 25px;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px var(--color-shadow);
 }
 
 .description {
     font-size: 1.2rem;
-    color: #5E1824;
+    color: var(--color-text-dark);
     max-width: 700px;
     margin: 0 auto;
     font-weight: 400;
@@ -130,14 +170,15 @@ body {
 /* Sección Colecciones */
 .collections-section {
     padding: 100px 0;
-    background-color: #FAF2ED;
+    background-color: var(--color-light);
 }
 
 .collection-item {
     padding: 20px;
-    background-color: #FEC3BA;
+    background-color: var(--color-paper);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px var(--color-shadow);
     transition: all 0.3s ease;
     text-align: center;
     cursor: pointer;
@@ -146,19 +187,19 @@ body {
 .collection-item h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #5E1824;
+    color: var(--color-secondary);
     margin-bottom: 10px;
 }
 
 .collection-item .description {
     font-size: 1rem;
-    color: #5E1824;
+    color: var(--color-text-muted);
     font-style: italic;
 }
 
 .collection-item:hover,
 .collection-item.active {
-    color: #A6323B;
+    color: var(--color-primary-dark);
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -179,8 +220,13 @@ body {
 /* Sección Invitación al Catálogo */
 .catalog-invite-section {
     padding: 100px 0;
-    background-color: #F6E5DB;
+    background-color: var(--color-mint);
     position: relative;
+}
+
+.catalog-invite-section .title,
+.catalog-invite-section .description {
+    color: var(--color-text-alternative);
 }
 
 .catalog-invite-section::after {
@@ -190,13 +236,12 @@ body {
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to top, rgba(246, 229, 219, 0.8), transparent);
     z-index: 1;
 }
 
 .btn-catalog {
-    background-color: #A6323B;
-    color: #FAF2ED;
+    background-color: var(--color-primary);
+    color: var(--color-paper);
     padding: 15px 35px;
     border: none;
     border-radius: 25px;
@@ -210,22 +255,24 @@ body {
 
 .btn-catalog:hover,
 .btn-catalog:focus {
-    background-color: #911F2F;
+    background-color: var(--color-primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(145, 31, 47, 0.4);
+    color: var(--color-button-alternative);
 }
 
 /* Sección Productos Destacados */
 .products-section {
     padding: 100px 0;
-    background-color: #FAF2ED;
+    background-color: var(--color-light);
 }
 
 .combo-card {
-    background-color: #FEC3BA;
+    background-color: var(--color-paper);
+    border: 1px solid var(--color-border);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px var(--color-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -261,7 +308,7 @@ body {
     left: 15px;
     padding: 6px 12px;
     border-radius: 20px;
-    color: #FAF2ED;
+    color: var(--color-paper);
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -269,18 +316,18 @@ body {
 }
 
 .bg-success {
-    background-color: #A6323B;
+    background-color: var(--color-success);
 }
 
 .bg-danger {
-    background-color: #911F2F;
+    background-color: var(--color-danger);
 }
 
 .combo-price {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    color: #FAF2ED;
+    color: var(--color-paper);
     font-weight: 700;
     font-size: 1.3rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -295,20 +342,20 @@ body {
 .combo-body {
     padding: 20px;
     text-align: center;
-    background-color: #FEC3BA;
+    background-color: var(--color-paper);
 }
 
 .combo-body h5 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    color: #5E1824;
+    color: var(--color-secondary);
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .combo-description {
     font-size: 1rem;
-    color: #5E1824;
+    color: var(--color-text-muted);
     margin-bottom: 15px;
     font-style: italic;
 }
@@ -318,21 +365,26 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: #F5DACB;
-    border-top: 1px solid rgba(115, 28, 44, 0.1);
+    background-color: var(--color-light);
+    border-top: 1px solid var(--color-border);
 }
 
 .stock-info {
     font-size: 1rem;
-    color: #5E1824;
+    color: var(--color-secondary);
     font-weight: 500;
 }
 
 /* Sección Contacto */
 .contact-section {
     padding: 100px 0;
-    background-color: #F6E5DB;
+    background-color: var(--color-mint);
     position: relative;
+}
+
+.contact-section .title,
+.contact-section .description {
+    color: var(--color-text-alternative);
 }
 
 .contact-section::before {
@@ -353,8 +405,8 @@ body {
 }
 
 .btn-contact {
-    background-color: #A6323B;
-    color: #FAF2ED;
+    background-color: var(--color-primary);
+    color: var(--color-paper);
     padding: 15px 35px;
     border: none;
     border-radius: 25px;
@@ -366,14 +418,17 @@ body {
 
 .btn-contact:hover,
 .btn-contact:focus {
-    background-color: #911F2F;
+    background-color: var(--color-primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(145, 31, 47, 0.4);
+    color: var(--color-button-alternative);
 }
 
 /* Footer */
 .footer {
     position: relative;
+    background-color: var(--color-secondary);
+    color: var(--color-paper);
 }
 
 .footer::before {
@@ -431,6 +486,16 @@ body {
     margin-bottom: 12px;
 }
 
+.footer_block-list a {
+    color: var(--color-paper);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_block-list a:hover {
+    color: var(--color-accent);
+}
+
 .footer_block-socials {
     list-style: none;
     padding: 0;
@@ -440,12 +505,14 @@ body {
 .footer_block-socials li a {
     font-size: 1.5rem;
     margin-right: 15px;
+    color: var(--color-paper);
     transition: transform 0.3s ease;
 }
 
 .footer_block-socials li a:hover,
 .footer_block-socials li a:focus {
     transform: scale(1.2);
+    color: var(--color-accent);
 }
 
 .icon {

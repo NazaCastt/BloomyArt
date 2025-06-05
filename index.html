@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>BloomyArt - Artesanías Únicas</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Encabezado con navegación y enlaces sociales -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
             <div class="container">
-                <a class="navbar-brand logo" href="#">BloomyArt</a>
+                <a class="navbar-brand logo" href="index.html">BloomyArt</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
+
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#tienda" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+                            <a class="nav-link dropdown-toggle" href="tienda.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#colecciones">Colecciones</a>
-                                <a class="dropdown-item" href="#categorias">Categorías</a>
-                                <a class="dropdown-item" href="#productos">Productos</a>
+                                <a class="dropdown-item" href="colecciones.html">Colecciones</a>
+                                <a class="dropdown-item" href="categorias.html">Categorías</a>
+                                <a class="dropdown-item" href="productos.html">Productos</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="#carrito">Carrito de compras</a></li>
                     </ul>
+
                     <div class="social-links">
                         <a href="https://wa.me/59172903473" class="nav-link" target="_blank">
-                            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                         <a href="https://www.facebook.com/vanesa.torrez.188478/" class="nav-link" target="_blank">
-                            <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                            <i class="fab fa-facebook-f"></i>
                         </a>
                         <a href="https://www.instagram.com/_robin.mp4_/" class="nav-link" target="_blank">
-                            <i class="fab fa-instagram" style="color: #E1306C;"></i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
         </nav>
@@ -55,10 +67,13 @@
     <!-- Sección de bienvenida -->
     <section class="hero-section text-center">
         <div class="container">
+
             <span class="subtitle">Artesanías únicas</span>
+
             <h1 class="title">Bienvenidos a BloomyArt</h1>
             <p class="description">Descubre la magia de nuestras creaciones hechas a mano, donde cada pieza cuenta una historia de amor y dedicación.</p>
-            <a href="#tienda" class="btn btn-primary btn-catalog">Explorar Ahora</a>
+            <br>
+            <a href="tienda.html" class="btn btn-catalog">Explorar Ahora</a>
         </div>
     </section>
 
@@ -72,23 +87,28 @@
     <!-- Sección de colecciones -->
     <section class="collections-section">
         <div class="container">
+
             <h2 class="title text-center">Nuestras Colecciones</h2>
+
             <div class="row collection-list">
                 <div class="col-md-4 collection-item">
                     <img src="img/1.jpeg" alt="Colección Primavera" class="collection-image img-fluid">
                     <h3>Colección Primavera</h3>
                     <p class="description">Explora nuestras piezas inspiradas en la frescura de la primavera.</p>
                 </div>
+
                 <div class="col-md-4 collection-item">
                     <img src="img/2.jpeg" alt="Colección Otoño" class="collection-image img-fluid">
                     <h3>Colección Otoño</h3>
                     <p class="description">Colores cálidos y texturas únicas para esta temporada.</p>
                 </div>
+
                 <div class="col-md-4 collection-item">
                     <img src="img/3.jpeg" alt="Colección Especial" class="collection-image img-fluid">
                     <h3>Colección Especial</h3>
                     <p class="description">Ediciones limitadas con un toque artesanal único.</p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -98,7 +118,8 @@
         <div class="container">
             <h2 class="title">¿Tienes Preguntas o Ideas?</h2>
             <p class="description">¡Contáctanos con tus preguntas o ideas! Estamos aquí para ayudarte.</p>
-            <a href="#contacto" class="btn btn-primary btn-catalog">Contáctanos</a>
+            <br>
+            <a href="contacto.html" class="btn btn-catalog">Contáctanos</a>
         </div>
     </section>
 
@@ -106,47 +127,57 @@
     <section class="products-section">
         <div class="container">
             <h2 class="title text-center">Productos Destacados</h2>
+
             <div class="row combo-list">
                 <div class="col-md-4">
                     <div class="combo-card card">
+
                         <div class="combo-header" style="background-image: url('img/4.jpeg');">
                             <span class="combo-badge bg-success">Nuevo</span>
                             <span class="combo-price">$50.00</span>
                         </div>
+
                         <div class="combo-body card-body">
                             <h5 class="card-title">Combo 1</h5>
                             <p class="combo-description card-text">Descripción breve del combo 1.</p>
                         </div>
+
                         <div class="combo-footer card-footer">
                             <span class="stock-info">En stock</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="combo-card card">
                         <div class="combo-header" style="background-image: url('img/5.jpeg');">
                             <span class="combo-badge bg-danger">Oferta</span>
                             <span class="combo-price">$45.00 <small>$50.00</small></span>
                         </div>
+
                         <div class="combo-body card-body">
                             <h5 class="card-title">Combo 2</h5>
                             <p class="combo-description card-text">Descripción breve del combo 2.</p>
                         </div>
+
                         <div class="combo-footer card-footer">
                             <span class="stock-info">Pocas unidades</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="combo-card card">
                         <div class="combo-header" style="background-image: url('img/6.jpeg');">
                             <span class="combo-badge bg-success">Nuevo</span>
                             <span class="combo-price">$60.00</span>
                         </div>
+
                         <div class="combo-body card-body">
                             <h5 class="card-title">Combo 3</h5>
                             <p class="combo-description card-text">Descripción breve del combo 3.</p>
                         </div>
+
                         <div class="combo-footer card-footer">
                             <span class="stock-info">En stock</span>
                         </div>
@@ -161,66 +192,79 @@
         <div class="container">
             <h2 class="title">Contáctanos</h2>
             <p class="description">¿Tienes alguna pregunta o necesitas ayuda? ¡Estamos aquí para ayudarte!</p>
-            <a href="#contacto" class="btn btn-primary btn-contact">Enviar Mensaje</a>
+            <br>
+            <a href="contacto.html" class="btn btn-contact">Enviar Mensaje</a>
         </div>
     </section>
 
     <!-- Pie de página -->
-    <footer class="footer section bg-dark text-white py-5">
+    <footer class="footer section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 footer_about">
-                    <a class="logo h3 text-white" href="index.html">
+                    <a class="logo h3" href="index.html">
                         <span class="logo_img"></span>
                         BloomyArt
                     </a>
+
                     <div class="wrapper mt-3">
                         <p class="footer_about-address text--sm text--bold">Tarija, Bolivia</p>
                         <p class="footer_about-copyright text--sm">
                             BloomyArt © Todos los Derechos Reservados <span id="currentYear">2025</span>
                         </p>
                     </div>
+
                 </div>
                 <div class="col-md-3 footer_block">
+
                     <h4 class="footer_block-title">Información de Contacto</h4>
+
                     <ul class="footer_block-list text--bold text--md list-unstyled">
                         <li>
-                            <a class="link text-white" href="tel:+59172903473">
+                            <a class="link" href="tel:+59172903473">
                                 <i class="icon-phone icon"></i> +591 729 034 73
                             </a>
                         </li>
+
                         <li>
-                            <a class="link text-white" href="mailto:nic.li.rdc@gmail.com">
+                            <a class="link" href="mailto:nic.li.rdc@gmail.com">
                                 <i class="icon-email icon"></i> nic.li.rdc@gmail.com
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer_block">
+
                     <h4 class="footer_block-title">Horarios</h4>
+
                     <ul class="footer_block-list text--md list-unstyled">
                         <li><span class="text--bold">Lun – Vie</span> de 8am a 9pm</li>
                         <li><span class="text--bold">Sab</span> de 9am a 4pm</li>
                         <li><span class="text--bold">Dom</span> de 9am a 4pm</li>
                     </ul>
                 </div>
+
                 <div class="col-md-3 footer_block">
+
                     <h4 class="footer_block-title">Síguenos</h4>
                     <p class="footer_block-subtitle text--md text--bold">Redes Sociales</p>
+
                     <ul class="footer_block-socials d-flex list-unstyled">
                         <li>
                             <a class="link" href="https://wa.me/59172903473" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                                <i class="fab fa-whatsapp"></i>
                             </a>
                         </li>
+
                         <li>
                             <a class="link" href="https://www.facebook.com/vanesa.torrez.188478/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
+
                         <li>
                             <a class="link" href="https://www.instagram.com/_robin.mp4_/" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-instagram" style="color: #E1306C;"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
@@ -233,9 +277,11 @@
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
+
     <!-- Scripts de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
