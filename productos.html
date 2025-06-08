@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Bloomy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">Bloomy</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="colecciones.html">Colecciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="combos.html">Combos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#carrito">Carrito</a></li>
+                    </ul>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/59172903473" class="nav-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/vanesa.torrez.188478/" class="nav-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_robin.mp4_/" class="nav-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="products-hero text-center">
+        <div class="container">
+            <h1 class="hero-title" id="product-category-title">Nuestros Productos</h1>
+            <p class="hero-subtitle">Descubre piezas únicas hechas con amor y dedicación</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="colecciones.html">Colecciones</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Categorías</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <div class="product-badge">Nuevo</div>
+                        <img src="img/18.jpeg" alt="Cuaderno Primavera" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Cuaderno Primavera</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-count">(12)</span>
+                            </div>
+                            <p class="product-description">Cuaderno artesanal con flores prensadas, 120 hojas.</p>
+                            <div class="product-price">
+                                <span class="current-price">$45.00</span>
+                                <span class="original-price">$55.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <div class="product-badge bg-danger">Oferta</div>
+                        <img src="img/15.jpeg" alt="Set de Postales Otoño" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Set de Postales Otoño</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="rating-count">(8)</span>
+                            </div>
+                            <p class="product-description">5 postales ilustradas con motivos otoñales.</p>
+                            <div class="product-price">
+                                <span class="current-price">$28.00</span>
+                                <span class="original-price">$35.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <div class="product-badge bg-success">Más Vendido</div>
+                        <img src="img/5.jpeg" alt="Ilustración Minimalista" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Ilustración Minimalista</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-count">(25)</span>
+                            </div>
+                            <p class="product-description">Impresión en papel de algodón, 30x40 cm.</p>
+                            <div class="product-price">
+                                <span class="current-price">$65.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <img src="img/17.jpeg" alt="Bolso Artesanal" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Bolso Artesanal</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-count">(15)</span>
+                            </div>
+                            <p class="product-description">Bolso de tela con estampado original, 100% algodón.</p>
+                            <div class="product-price">
+                                <span class="current-price">$75.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <div class="product-badge">Edición Limitada</div>
+                        <img src="img/13.jpeg" alt="Set Acuarelas Primavera" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Set Acuarelas Primavera</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="rating-count">(7)</span>
+                            </div>
+                            <p class="product-description">12 colores inspirados en la paleta primaveral.</p>
+                            <div class="product-price">
+                                <span class="current-price">$52.00</span>
+                                <span class="original-price">$60.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="product-card">
+                        <img src="img/16.jpeg" alt="Agenda Minimalista" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Agenda Minimalista</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-count">(18)</span>
+                            </div>
+                            <p class="product-description">Agenda anual con cubierta de lino, diseño limpio.</p>
+                            <div class="product-price">
+                                <span class="current-price">$48.00</span>
+                            </div>
+                            <button class="btn-add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Volver a Categorías -->
+    <section class="back-to-categories py-4 text-center">
+        <div class="container">
+            <a href="categorias.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Volver a Categorías
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer_about">
+                    <a class="logo h3" href="index.html">
+                        <span class="logo_img"></span>
+                        Bloomy
+                    </a>
+
+                    <div class="wrapper mt-3">
+                        <p class="footer_about-address text--sm text--bold">Tarija, Bolivia</p>
+                        <p class="footer_about-copyright text--sm">
+                            Bloomy © Todos los Derechos Reservados <span id="currentYear">2025</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footer_block">
+                    <h4 class="footer_block-title">Información de Contacto</h4>
+                    <ul class="footer_block-list text--bold text--md list-unstyled">
+                        <li>
+                            <a class="link" href="tel:+59172903473">
+                                <i class="icon-phone icon"></i> +591 729 034 73
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="mailto:nic.li.rdc@gmail.com">
+                                <i class="icon-email icon"></i> nic.li.rdc@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer_block">
+                    <h4 class="footer_block-title">Horarios</h4>
+                    <ul class="footer_block-list text--md list-unstyled">
+                        <li><span class="text--bold">Lun – Vie</span> de 8am a 9pm</li>
+                        <li><span class="text--bold">Sab</span> de 9am a 4pm</li>
+                        <li><span class="text--bold">Dom</span> de 9am a 4pm</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer_block">
+                    <h4 class="footer_block-title">Síguenos</h4>
+                    <p class="footer_block-subtitle text--md text--bold">Redes Sociales</p>
+                    <ul class="footer_block-socials d-flex list-unstyled">
+                        <li>
+                            <a class="link" href="https://wa.me/59172903473" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://www.facebook.com/vanesa.torrez.188478/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="https://www.instagram.com/_robin.mp4_/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        
+        // Obtener parámetro de categoría de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoria = urlParams.get('categoria');
+        
+        // Actualizar título según la categoría
+        if(categoria) {
+            const categoryTitle = document.getElementById('product-category-title');
+            const categoryName = categoria.charAt(0).toUpperCase() + categoria.slice(1);
+            categoryTitle.textContent = `Productos: ${categoryName}`;
+        }
+        
+        // Efecto hover simplificado para las tarjetas de producto
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.querySelector('.product-image').style.transform = 'scale(1.05)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.querySelector('.product-image').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

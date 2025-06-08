@@ -1,15 +1,14 @@
 :root {
     /* Paleta de colores */
-    --color-primary: #FF9E8F;        /* Coral principal */
-    --color-primary-dark: #F47C72;   /* Coral oscuro */
-    --color-secondary: #5A534A;      /* Texto principal */
-    --color-accent: #7BC4B8;         /* Turquesa */
-    --color-light: #FFF9F5;          /* Fondo claro */
-    --color-paper: #FFFFFF;          /* Fondo blanco */
-    --color-border: #E0E7E6;         /* Bordes */
-    --color-text-muted: #8A837B;     /* Texto secundario */
-    --color-text-dark: #4A4540;      /* Texto oscuro */
-    --color-coral: #F47C72;
+    --color-primary: #FF9E8F;               /* Coral principal */
+    --color-primary-dark: #F47C72;          /* Coral oscuro */
+    --color-secondary: #5A534A;             /* Texto principal */
+    --color-accent: #7BC4B8;                /* Turquesa */
+    --color-light: #FFF9F5;                 /* Fondo claro */
+    --color-paper: #FFFFFF;                 /* Fondo blanco */
+    --color-border: #E0E7E6;                /* Bordes */
+    --color-text-muted: #8A837B;            /* Texto secundario */
+    --color-text-dark: #4A4540;             /* Texto oscuro */
     --color-shadow: rgba(0, 0, 0, 0.05);
     
     /* Colores de estado */
@@ -51,19 +50,15 @@ body {
     color: var(--color-primary-dark);
 }
 
-.nav-link.active {
-    color: var(--color-primary) !important;
-}
-
 /* Hero Section */
-.combos-hero-section {
+.categories-hero {
     background-color: var(--color-peach);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
 }
 
-.combos-hero-section::before {
+.categories-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,7 +69,7 @@ body {
     z-index: 1;
 }
 
-.combos-hero-title {
+.hero-title {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     color: var(--color-secondary);
@@ -84,17 +79,41 @@ body {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
-.combos-hero-subtitle {
+.hero-subtitle {
     font-size: 1.3rem;
     color: var(--color-text-dark);
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
 }
 
-/* Sección de Combos */
-.combos-section {
+/* Breadcrumb */
+.breadcrumb-section {
+    background-color: var(--color-light);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--color-text-muted);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    color: var(--color-text-muted);
+}
+
+/* Sección de Categorías */
+.categories-section {
     background-color: var(--color-light);
 }
 
@@ -127,228 +146,108 @@ body {
     margin: 0 auto;
 }
 
-/* Tarjetas de Combo */
-.combo-card {
+/* Tarjetas de Categoría */
+.category-card {
     background-color: var(--color-paper);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--color-shadow);
     transition: all 0.3s ease;
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-.combo-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+.category-link {
+    display: block;
+    text-decoration: none;
 }
 
-.combo-header {
+.category-image {
     height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.5s ease;
 }
 
-.combo-overlay {
+.category-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background-color: rgba(90, 83, 74, 0.5);
+    transition: opacity 0.3s ease;
 }
 
-.combo-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    background-color: var(--color-primary);
-    color: var(--color-paper);
-    font-size: 0.9rem;
-    font-weight: 600;
-    z-index: 2;
-}
-
-.combo-badge.bg-success {
-    background-color: var(--color-success);
-}
-
-.combo-badge.bg-danger {
-    background-color: var(--color-danger);
-}
-
-.combo-price {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: var(--color-paper);
-    font-size: 1.8rem;
-    font-weight: 700;
-    z-index: 2;
-}
-
-.combo-price small {
-    display: block;
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: line-through;
-    opacity: 0.8;
-}
-
-.combo-body {
-    padding: 25px;
-    flex-grow: 1;
-}
-
-.combo-title {
+.category-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--color-secondary);
+    font-size: 1.8rem;
+    color: var(--color-paper);
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.category-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-info p {
+    color: var(--color-text-muted);
     margin-bottom: 15px;
 }
 
-.combo-description {
-    color: var(--color-text-muted);
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.combo-features {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.combo-features li {
-    margin-bottom: 8px;
-    color: var(--color-text-dark);
-}
-
-.combo-features i {
-    color: var(--color-primary);
-    margin-right: 8px;
-}
-
-.combo-footer {
-    padding: 20px;
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.btn-combo {
-    background-color: var(--color-primary);
-    color: var(--color-paper);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-combo:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(244, 124, 114, 0.3);
-    color: var(--color-light);
-}
-
-.combo-details {
+.btn-explore {
     color: var(--color-primary);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.combo-details:hover {
+.btn-explore:hover {
     color: var(--color-primary-dark);
     text-decoration: underline;
 }
 
-/* Sección de Beneficios */
-.benefits-section {
-    background-color: var(--color-mint);
-    color: var(--color-text-alternative);
+.btn-explore i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
 }
 
-.benefits-section .section-title,
-.benefits-section .section-description {
-    color: var(--color-text-alternative);
+.btn-explore:hover i {
+    transform: translateX(3px);
 }
 
-.benefit-card {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    padding: 30px;
-    height: 100%;
-    transition: all 0.3s ease;
-}
-
-.benefit-card:hover {
-    background-color: rgba(255,255,255,0.2);
-    transform: translateY(-5px);
-}
-
-.benefit-icon {
-    font-size: 2.5rem;
-    color: var(--color-paper);
-    margin-bottom: 20px;
-}
-
-.benefit-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: var(--color-paper);
-}
-
-.benefit-description {
-    opacity: 0.9;
-}
-
-/* CTA Section */
-.cta-section {
+/* Botón Volver */
+.back-to-collections {
     background-color: var(--color-light);
 }
 
-.cta-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: var(--color-secondary);
-    margin-bottom: 15px;
-}
-
-.cta-description {
-    font-size: 1.2rem;
-    color: var(--color-text-dark);
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btn-cta {
-    background-color: var(--color-primary);
-    color: var(--color-paper);
-    padding: 15px 35px;
-    border: none;
-    border-radius: 25px;
+.btn-back {
+    color: var(--color-primary);
     font-weight: 600;
-    font-size: 1.1rem;
+    text-decoration: none;
     transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
 }
 
-.btn-cta:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(244, 124, 114, 0.3);
-    color: var(--color-paper);
+.btn-back i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.btn-back:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+.btn-back:hover i {
+    transform: translateX(-3px);
 }
 
 /* Footer */
@@ -448,21 +347,17 @@ body {
 
 /* Responsive */
 @media (max-width: 991px) {
-    .combo-header {
+    .category-image {
         height: 200px;
-    }
-    
-    .combo-price {
-        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 767px) {
-    .combos-hero-title {
+    .hero-title {
         font-size: 2.5rem;
     }
     
-    .combos-hero-subtitle {
+    .hero-subtitle {
         font-size: 1.1rem;
     }
     
@@ -470,15 +365,11 @@ body {
         font-size: 2rem;
     }
     
-    .combo-header {
+    .category-image {
         height: 180px;
     }
     
-    .combo-body {
-        padding: 20px;
-    }
-    
-    .combo-title {
-        font-size: 1.3rem;
+    .category-name {
+        font-size: 1.5rem;
     }
 }

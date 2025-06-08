@@ -1,15 +1,14 @@
 :root {
     /* Paleta de colores */
-    --color-primary: #FF9E8F;        /* Coral principal */
-    --color-primary-dark: #F47C72;   /* Coral oscuro */
-    --color-secondary: #5A534A;      /* Texto principal */
-    --color-accent: #7BC4B8;         /* Turquesa */
-    --color-light: #FFF9F5;          /* Fondo claro */
-    --color-paper: #FFFFFF;          /* Fondo blanco */
-    --color-border: #E0E7E6;         /* Bordes */
-    --color-text-muted: #8A837B;     /* Texto secundario */
-    --color-text-dark: #4A4540;      /* Texto oscuro */
-    --color-coral: #F47C72;
+    --color-primary: #FF9E8F;               /* Coral principal */
+    --color-primary-dark: #F47C72;          /* Coral oscuro */
+    --color-secondary: #5A534A;             /* Texto principal */
+    --color-accent: #7BC4B8;                /* Turquesa */
+    --color-light: #FFF9F5;                 /* Fondo claro */
+    --color-paper: #FFFFFF;                 /* Fondo blanco */
+    --color-border: #E0E7E6;                /* Bordes */
+    --color-text-muted: #8A837B;            /* Texto secundario */
+    --color-text-dark: #4A4540;             /* Texto oscuro */
     --color-shadow: rgba(0, 0, 0, 0.05);
     
     /* Colores de estado */
@@ -19,11 +18,12 @@
     --color-info: #7D9EB2;           /* Azul */
     
     /* Colores adicionales */
-    --color-peach: #F9C4B9;          /* Melocotón */
-    --color-mint: #79BCAF;           /* verde aguamarina */
-    --color-turquoise: #7BC4B8;      /* Turquesa */
-    --color-text-alternative: #FAF2ED; /* Texto alternativo */
-    --color-button-alternative: #911F2F; /* Botón alternativo */
+    --color-peach: #F9C4B9;                 /* Melocotón */
+    --color-mint: #79BCAF;                  /* verde aguamarina */
+    --color-turquoise: #7BC4B8;             /* Turquesa */
+    --color-text-alternative: #FAF2ED;      /* Texto alternativo */
+    --color-button-alternative: #911F2F;    /* Botón alternativo */
+    --color-medium: #F47C72;                /* Fondo medio */
 }
 
 /* Reset y Estilos Generales */
