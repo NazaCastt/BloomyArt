@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomy | Iniciar Sesión</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="col col-1">
+            <div class="image-layer1">
+                <img src="img/cara.png" class="form-image-main" alt="Cara Bloomy">
+            </div>
+
+            <div class="image-layer2">
+                <img src="img/logo.png" class="form-image-main" alt="Logo Bloomy">
+            </div>
+        </div>
+
+        <div class="col col-2">
+            <div class="btn-box">
+                <button class="btn btn-1" id="login">Iniciar Sesión</button>
+                <button class="btn btn-2" id="register">Registrarse</button>
+            </div>
+            
+            <!-- Formulario de Login -->
+            <div class="login-form">
+                <div class="form-title">
+                    <span>Iniciar Sesión</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="email" class="input-field" placeholder="Correo electrónico" required>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Contraseña" required>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div class="input-box">
+                        <button class="input-submit">
+                            <span>Ingresar</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Registro -->
+            <div class="register-form">
+                <div class="form-title">
+                    <span>Crear Cuenta</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nombre completo" required>
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="input-field" placeholder="Correo electrónico" required>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" class="input-field" placeholder="Teléfono" required>
+                        <i class="bx bx-phone icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Contraseña" required>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Confirmar contraseña" required>
+                        <i class="bx bx-lock icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <button class="input-submit">
+                            <span>Registrarse</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script para alternar entre login y registro
+        const loginBtn = document.getElementById('login');
+        const registerBtn = document.getElementById('register');
+        const loginForm = document.querySelector('.login-form');
+        const registerForm = document.querySelector('.register-form');
+
+        loginBtn.addEventListener('click', () => {
+            loginBtn.classList.add('btn-1');
+            loginBtn.classList.remove('btn-2');
+            registerBtn.classList.add('btn-2');
+            registerBtn.classList.remove('btn-1');
+            
+            loginForm.style.left = '50%';
+            registerForm.style.left = '-50%';
+        });
+
+        registerBtn.addEventListener('click', () => {
+            registerBtn.classList.add('btn-1');
+            registerBtn.classList.remove('btn-2');
+            loginBtn.classList.add('btn-2');
+            loginBtn.classList.remove('btn-1');
+            
+            loginForm.style.left = '150%';
+            registerForm.style.left = '50%';
+        });
+    </script>
+</body>
+</html>
